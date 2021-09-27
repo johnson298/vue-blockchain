@@ -1,0 +1,13 @@
+import Vue from "vue";
+import Icon from "./icon/icon";
+import IconStore from "./icon/icon-store";
+import Chart from "./Chart";
+import MaxButton from "./Max";
+import Tooltip from "./Tooltip";
+import Loading from './Loading/loading';
+Vue.component("a-loading", Loading);
+Vue.component("a-icon", Icon);
+Vue.component("a-icon-store", IconStore);
+Vue.component("a-chart", Chart);
+Vue.component("a-max", MaxButton);
+Vue.component("a-tooltip", Tooltip);

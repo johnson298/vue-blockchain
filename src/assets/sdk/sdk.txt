@@ -1,0 +1,37 @@
+引用
+import { Web3Provider } from './js/sdk/Web3Provider.js';
+import { Constant } from "./js/sdk/Constant.js";
+import { Web3Caller } from './src/libs/sdk/Web3Caller.js';
+
+1.连接
+Web3Provider.connect(Constant.WalletType.MetaMask, async function (type, data) {});
+
+type类型
+ConnectType: {
+    NotInstall: "NotInstall", //没有安装钱包   data 无
+    NotLogin: "NotEnable", //没有登录钱包     data 无
+    AccountChange: "AccountChange", //帐号改变     data: {account: xxx}
+    ChainChanged: "ChainChanged", //连接的链改变    data: {chainName:xxx}
+    ConnectSuccess: "ConnectSuccess",  //连接成功  data {account: xxx, chainName:xxx}
+    ConnectReject: "ConnectReject" //用户拒绝      data:无
+ },
+
+2.获取余额
+await Web3Provider.getBalance
+返回
+0.2222 余额
+
+3.获取当前链的名称
+Web3Provider.getChainName
+返回
+"Ropsten"
+
+4.判断是否主网
+Web3Provider.isMainNet
+返回
+true/false
+
+5.上币
+Web3Caller.callListToken("xxxxxxxxxx", 1) 地址和消耗dgas数量;
+
+

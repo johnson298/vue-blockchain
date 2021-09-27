@@ -1,0 +1,31 @@
+[
+
+		{ "address": "0x658A109C5900BC6d2357c87549B651670E5b0539", "symbol": "FOR" },
+		{ "address": "0xd4CB328A82bDf5f03eB737f37Fa6B370aef3e888", "symbol": "CREAM" },
+		{ "address": "0xf307910a4c7bbc79691fd374889b36d8531b08e3", "symbol": "ANKR" },
+		{ "address": "0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5", "symbol": "BAKE" },
+		{ "address": "0x40929FB2008c830731A3d972950bC13f70161c75", "symbol": "TUNA" },
+		{ "address": "0xaCd6b5f76Db153FB45EAE6D5be5BDbd45d1b2A8C", "symbol": "PEACH" },
+		{ "address": "0xE4Ae305ebE1AbE663f261Bc00534067C80ad677C", "symbol": "SPARTA" },
+		{ "address": "0x8E9f5173e16Ff93F81579d73A7f9723324d6B6aF", "symbol": "MILK" },
+
+
+		{ "address": "0xAe9269f27437f0fcBC232d39Ec814844a51d6b8f", "symbol": "BURGER" },
+		{ "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", "symbol": "BNB" },
+		{ "address": "0x55d398326f99059fF775485246999027B3197955", "symbol": "USDT" },
+		{ "address": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE", "symbol": "XRP" },
+		{ "address": "0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD", "symbol": "LINK" },
+		{ "address": "0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf", "symbol": "BCH" },
+		{ "address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402", "symbol": "DOT" },
+		{ "address": "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94", "symbol": "LTC" },
+		{ "address": "0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6", "symbol": "EOS" },
+		{ "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47", "symbol": "ADA" },
+		{ "address": "0x16939ef78684453bfDFb47825F8a5F714f12623a", "symbol": "XTZ" },
+		{ "address": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3", "symbol": "DAI" },
+		{ "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56", "symbol": "BUSD" },
+		{ "address": "0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18", "symbol": "BAND" },
+		{ "address": "0xaF53d56ff99f1322515E54FdDE93FF8b3b7DAFd5", "symbol": "PROM" },
+		{ "address": "0x007EA5C0Ea75a8DF45D288a4debdD5bb633F9e56", "symbol": "CAN" },
+		{ "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c", "symbol": "BTCB" },
+		{ "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8", "symbol": "ETH" }
+	]

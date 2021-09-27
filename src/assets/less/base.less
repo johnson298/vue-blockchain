@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body > div:nth-of-type(1) {
+    height: 100%;
+    min-height: 100%;
+}
+
+html, body {
+    font: 16px/1 inter,PingFang SC,Microsoft YaHei,iconfont;
+    box-sizing: border-box;
+    font-family: inter, Roboto PingFang SC Microsoft YaHei iconfont;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: var(--col-body-background);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* Project id 2423951 */
+    src: url('//at.alicdn.com/t/font_2423951_b7f51i76237.woff2?t=1620728136373') format('woff2'),
+    url('//at.alicdn.com/t/font_2423951_b7f51i76237.woff?t=1620728136373') format('woff'),
+    url('//at.alicdn.com/t/font_2423951_b7f51i76237.ttf?t=1620728136373') format('truetype');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('../inter.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div,
+h3,
+h2,
+h1,
+h4,
+p,
+li {
+    line-height: 1;
+}
+
+a,
+button,
+input,
+li {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+body,
+html a {
+    color: #333;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p,
+h3 {
+    margin: 0;
+}
+
+textarea {
+    border: 0;
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*文字溢出...*/
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.pos-r {
+    position: relative;
+}
+
+.pos-a {
+    position: absolute;
+}
+
+.pos-f {
+    position: fixed;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.fix-ios-scroll {
+    -webkit-overflow-scrolling: touch;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*禁止长按选中*/
+*:not(input, textarea) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+[contenteditable="true"],
+input,
+textarea {
+    -webkit-user-select: auto !important;
+    -khtml-user-select: auto !important;
+    -moz-user-select: auto !important;
+    -ms-user-select: auto !important;
+    -o-user-select: auto !important;
+    user-select: auto !important;
+}
+
+.btn {
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:active {
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+/*三角  弹框上的三角*/
+.border-triangle {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 6px;
+    -webkit-filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03));
+    filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03));
+    top: 6px;
+    right: 14px;
+    margin-right: 3px;
+    border-top-width: 0;
+    border-bottom-color: #fff;
+}
+
+/*input输入框设置type=number时，去掉后面的上下按钮 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.scrollbar-hidden {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+.__background {
+    background-color: var(--col-card-background-default);
+}
+
+.__cursor {
+    cursor: pointer;
+}
+
+.__container {
+    width: 100%;
+    background-color: var(--col-body-background);
+    border-radius: 10px;
+}
+
+.__shadow {
+    box-shadow: 0 0 20px rgba(21, 11, 112, 0.08);
+}
+
+.__paper {
+    background-color: var(--col-paper);
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--col-border);
+}
+
+.__button {
+    width: 100%;
+    font-size: 16px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+
+    &.is-disabled {
+        background: #292d31 !important;
+        color: var(--col-label60) !important;
+
+        &.implement-btn {
+            background: rgba(#292d31, 0.3) !important;
+        }
+    }
+
+    &.swap {
+        color: #1e2226;
+        background: var(--col-main);
+    }
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    width: 0px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+    background-color: rgba(#f0b80b, .8);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    opacity: 0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+}
+
+
+@media (min-width: 960px) {
+    .__container {
+        margin: 0 auto 70px auto;
+        box-shadow: 0 0 20px rgba(21, 11, 112, 0.08);
+        border-radius: 10px;
+    }
+
+    .__paper {
+        background-color: var(--col-paper);
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid var(--col-border);
+    }
+
+    .__button {
+        font-size: 16px;
+        height: 60px;
+    }
+}
+
+
+
+.loadings{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-content{
+        position: absolute;
+        z-index: 9999;
+        width: 180px;
+        height: 180px;
+        border-radius: 4px;
+    }
+    &-loading{
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+        background: url("~views/Swap/images/loading.gif");
+        background-size: 100% 100%;
+    }
+}
+
+/*  定义字体权重 */
+.f-fw1 {
+    font-weight: 100 !important;
+}
+.f-fw2 {
+    font-weight: 200 !important;
+}
+.f-fw3 {
+    font-weight: 300 !important;
+}
+.f-fw4 {
+    font-weight: 400 !important;
+}
+.f-fw5 {
+    font-weight: 600 !important;
+}
+.f-fw6 {
+    font-weight: 600 !important;
+}
+.f-fw7 {
+    font-weight: 700 !important;
+}
+.f-fw8 {
+    font-weight: 800 !important;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 176px !important;
+    }
+}
